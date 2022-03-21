@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div class="slider-wrap" id="slider-wrap">
+        <ul class="list slider" id="slider">
+            <li>
+                <img src="<%= require('./src/img/img_1.jpeg') %>" />
+            </li>
+            <li>
+                <img src="<%= require('./src/img/img_2.jpeg') %>" />
+            </li>
+            <li>
+                <img src="<%= require('./src/img/img_3.jpeg') %>" />
+            </li>
+            <li>
+                <img src="<%= require('./src/img/img_4.jpeg') %>" />
+            </li>
+            <li>
+                <img src="<%= require('./src/img/img_5.jpeg') %>" />
+            </li>
+        </ul>
+
+        <div class="indicator-wrap" id="indicator-wrap">
+            <ul>
+            </ul>
+        </div>
+
+        <div class="btn next" id="next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        <div class="btn previous" id="previous">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </div>
+
+        <div class="control-wrap play" id="control-wrap">
+            <i class="fa-solid fa-play" id="play" data-status="play"></i>
+            <i class="fa-solid fa-pause" id="pause" data-status="pause"></i>
+        </div>
+    </div>
+</body>
+
+</html>
